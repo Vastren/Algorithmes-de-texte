@@ -1,14 +1,14 @@
 # 🔍 Projet Algorithmes de Recherche & Compression
 
-Ce projet contient trois implémentations majeures d’algorithmes utilisés pour la **recherche de motifs** dans du texte et la **compression** à l’aide d’arbres binaires.
+Ce projet contient trois implémentations d’algorithmes utilisés pour la **recherche de motifs** dans du texte et la **compression** de texte.
 
 ---
 
 ## 📦 Sommaire
 
-1. [🔎 Rabin-Karp (C)](#rabin-karp)
-2. [📘 Boyer-Moore (OCaml)](#boyer-moore)
-3. [🌲 Huffman & Arbres de Codage (OCaml)](#huffman)
+1. 🔎 Rabin-Karp (C)
+2. 📘 Boyer-Moore (OCaml)
+3. 🌲 Huffman & Arbres de Codage (OCaml)
 
 ---
 
@@ -43,7 +43,7 @@ gcc rabinkarp.c -o rabinkarp
 
 ### Description
 
-L’algorithme de Boyer-Moore est l’un des plus efficaces pour la recherche de motifs. Il saute intelligemment des portions de texte en utilisant deux heuristiques : **bad character** et **good suffix**.
+L’algorithme de Boyer-Moore est efficace pour la recherche de motifs. Il saute intelligemment des portions de texte en utilisant deux heuristiques : **bad character** et **good suffix**.
 
 ### Fonctionnalités
 
@@ -56,8 +56,6 @@ L’algorithme de Boyer-Moore est l’un des plus efficaces pour la recherche de
 ocamlc -o boyermoore boyermoore.ml
 ./boyermoore
 ```
-
-> *(Prévoir un fichier de test ou une fonction main si nécessaire)*
 
 ---
 
@@ -85,17 +83,3 @@ ocamlc -o huffman priority_queue.ml abr.ml huffman.ml
 ./huffman
 ```
 
-> *(Prévoir une fonction `main` ou des tests manuels pour utilisation)*
-
----
-
-## 🧠 Concepts Clés
-
-- Hachage modulaire (Rabin-Karp)
-- Sauts intelligents dans le texte (Boyer-Moore)
-- Compression avec arbres binaires (Huffman)
-- Structures de données auxiliaires : ABR, file de priorité
-
-## 📄 Licence
-
-Code open source pour usage personnel et éducatif.
